@@ -27,6 +27,11 @@ buttons.forEach(button => {
             expression= "";
         }
 
+        if(type === "backspace"){
+            displayValue = displayValue.slice(0, -1);
+            expression = expression.slice(0, -1);
+        }
+
 
         if(type === "equal"){
             try{
@@ -48,3 +53,4 @@ buttons.forEach(button => {
         screen.scrollLeft = screen.scrollWidth;}
     });
 });
+
