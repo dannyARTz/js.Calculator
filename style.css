@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+#screen::-webkit-scrollbar {
+    height: 6px;
+}
+
+#screen::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#screen::-webkit-scrollbar-thumb {
+    background: rgba(148, 148, 148, 0.4);
+    border-radius: 10px;
+}
+
+#screen::-webkit-scrollbar-thumb:hover {
+    background: rgba(151, 151, 151, 0.7);
+}
+
+
+
+
+.prod{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-image: 
+  
+  url("xcalc-bg2.svg");
+  background-size: center;
+
+}
+
+.calc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: min(50%, 320px);
+    min-height: 50vh;
+    background-color: rgba(255, 255, 255, 0.692);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    border: solid .03px rgba(128, 128, 128, 0.144);
+    padding: 30px;
+    gap: 20px;
+    
+}
+
+.display{
+ padding: 20px;
+ border: solid 1px grey;
+ box-sizing: border-box;
+ width: 100%;
+ background-color: rgba(255, 255, 255, 0.719);
+ border-radius: 3px;
+
+}
+
+#screen{
+    text-align: right;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    overflow-x: auto;
+    white-space: nowrap;
+
+}
+.row1 , .row2 , .row3, .row4, .row5, .row6 {
+
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.row1 button, .row2 button, .row3 button, .row4 button, .row5 button, .row6 button{
+    width: 100%;
+    flex: 1;
+    padding: 15px;
+    border: 0.4px solid grey;
+    border-radius: 2px;
+
+
+}
+
+.buttons{
+    width: 100%;
+}
+
+.buttons button:hover{
+    background-color: black;
+    color: white;
+}
+
+.buttons button:active{
+    background-color: rgb(63, 63, 63);
+    color: white;
+
+}
+
+.numButtons{
+
+display: flex;
+flex-direction: column;
+gap: 10px;}
+
+
+.addB{
+    background-color: rgb(177, 255, 187);
+    border: none;
+}
+
+.subB{
+    background-color: rgb(255, 188, 188);    
+    border: none;
+}
+
+.divB{
+    background-color: rgb(156, 232, 255);
+    border: none;
+}
+
+.multiplyB{
+    background-color: rgb(255, 234, 167);
+    border: none;
+}
+
+
+.EQN{
+    background-color: black;
+    color: rgb(197, 197, 197);
+}
