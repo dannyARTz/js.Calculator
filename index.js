@@ -22,15 +22,17 @@ buttons.forEach(button => {
             expression += value;
         }
 
+        if(type === "backspace"){
+            displayValue = displayValue.slice(0, -1);
+            expression = expression.slice(0, -1);
+        }
+
         if(type === "delete"){
             displayValue = "";
             expression= "";
         }
 
-        if(type === "backspace"){
-            displayValue = displayValue.slice(0, -1);
-            expression = expression.slice(0, -1);
-        }
+
 
 
         if(type === "equal"){
@@ -53,4 +55,5 @@ buttons.forEach(button => {
         screen.scrollLeft = screen.scrollWidth;}
     });
 });
+
 
