@@ -26,50 +26,27 @@
     background: rgba(151, 151, 151, 0.7);
 }
 
-@media (max-width: 480px){
-    .buttons button{
+@media (max-width: 480px) {
+    .calc {
+        width: 95%;
+        padding: 16px;
+        gap: 12px;
+    }
+
+    .display {
+        padding: 12px;
+    }
+
+    #screen {
+        font-size: 1.2rem;
+    }
+
+    .buttons button {
         height: 44px;
         font-size: 0.95rem;
     }
 }
 
-@media (max-width: 480px) {
-
-    .calc{
-        width: 95%;
-        padding: 20px;
-        gap: 15px;
-    }
-
-    @media (max-width: 480px){
-    .calc{
-        padding: 16px;
-        gap: 12px;
-    }
-
-    .display{
-        padding: 12px;
-    }
-}
-
-    .display{
-        padding: 15px;
-    }
-
-    #screen{
-        font-size: 1.2rem;
-    }
-
-    .row1 button,
-    .row2 button,
-    .row3 button,
-    .row4 button,
-    .row5 button,
-    .row6 button{
-        padding: 12px;
-        font-size: 1rem;
-    }
-}
 
 
 
@@ -143,9 +120,9 @@
 
 }
 
-.row4 button,
-.row7 button{
+.buttons button {
     height: 48px;
+    font-size: 1rem;
 }
 
 .buttons{
@@ -153,7 +130,7 @@
 }
 
 .buttons button{
-    height: 48px;
+
     font-size: 1rem;
 }
 
@@ -204,6 +181,7 @@ gap: 10px;}
 
 .bckspc {
 max-width: 30%;}
+
 
 
 
